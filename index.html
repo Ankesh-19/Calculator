@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <div id="cal-in">
+            <input type="text" id="box" readonly>
+            <div id="num-sec">
+                <div id="row-1">
+                    <button id="one"onclick="currentDisplay = currentDisplay - ' '; document.querySelector('#box').value = currentDisplay;">c</button>
+
+                      <button id="two" onclick="currentDisplay = currentDisplay + '1';document.querySelector('#box').value = currentDisplay;">1</button> 
+
+                    <button id="three" onclick="currentDisplay = currentDisplay + '2';document.querySelector('#box').value = currentDisplay; " >2</button>
+                </div>
+                <div id="row-2">
+                    <button id="four"onclick="currentDisplay = currentDisplay + '+'; document.querySelector('#box').value = currentDisplay;">+</button>
+                    
+                    <button id="five" onclick="currentDisplay = currentDisplay + '3'; document.querySelector('#box').value = currentDisplay;">3</button>
+                    
+                    <button id="six" onclick="currentDisplay = currentDisplay + '4'; document.querySelector('#box').value = currentDisplay;">4</button>
+                </div>
+                <div id="row3">
+                    <button id="seven"onclick="currentDisplay = currentDisplay + '-'; document.querySelector('#box').value = currentDisplay;">-</button>
+                    
+                    <button id="eight" onclick="currentDisplay = currentDisplay + '5'; document.querySelector('#box').value = currentDisplay;">5</button> 
+                    
+                    <button id="nine" onclick="currentDisplay = currentDisplay + '6';document.querySelector('#box').value = currentDisplay;">6</button>
+                </div>
+                <div id="row-4">
+                    <button id="ten"onclick="currentDisplay = currentDisplay + '*'; document.querySelector('#box').value = currentDisplay;">*</button>
+                    
+                    <button id="eleven"onclick="currentDisplay = currentDisplay + '7'; document.querySelector('#box').value = currentDisplay;">7</button>
+                    
+                    <button id="twelve"onclick="currentDisplay = currentDisplay + '8'; document.querySelector('#box').value = currentDisplay;">8</button>
+                </div>
+                <div id="row-5">
+                    <button id="thirteen"onclick="currentDisplay = currentDisplay + '/'; document.querySelector('#display').value = currentDisplay;">/</button> 
+                    
+                    <button id="fourteen" onclick="currentDisplay = currentDisplay + '9';document.querySelector('#box').value = currentDisplay;">9</button> 
+                    
+                    <button id="fifteen"onclick="currentDisplay = currentDisplay + '0'; document.querySelector('#box').value = currentDisplay;">0</button>
+                </div>
+                <div id="row-6">
+                    <button id="seventeen" onclick="
+                        currentDisplay = eval(currentDisplay);
+                            document.querySelector('#box').value  = currentDisplay;
+                        ">=</button>
+                
+                    
+                    <button id="seventeen"onclick="currentDisplay = currentDisplay + '.'; document.querySelector('#box').value = currentDisplay;">.</button>
+                </div> 
+            </div>
+        </div> 
+    </div>
+
+    <script>
+        let currentDisplay = "";
+        document.querySelector('#box').value = currentDisplay;
+
+    </script>
+
+    
+</body>
+</html>
